@@ -1,12 +1,11 @@
-// app/premium/page.jsx
 "use client";
 
 import { useState } from 'react';
-import PlanCard from '../components/PlanCard'; // Import the component from step 4
+import PlanCard from '../components/PlanCard'; 
 import { FiCheck, FiZap, FiUsers, FiStar, FiAward } from 'react-icons/fi';
 
 export default function PremiumPage() {
-  const [billingPeriod, setBillingPeriod] = useState('monthly'); // 'monthly' or 'yearly'
+  const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly'); 
 
   const planFeatures = {
     standard: ["Access to all standard commands", "Basic AI image generation (10/day)", "Server economy features", "Standard support"],

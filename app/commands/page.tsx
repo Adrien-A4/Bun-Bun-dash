@@ -1,6 +1,6 @@
+"use client";
 import { FiSearch, FiUsers, FiStar, FiZap, FiLock } from "react-icons/fi";
 import { IoGameController, IoSparkles } from "react-icons/io5";
-"use client";
 import { useState, type ReactElement } from "react";
 type Category = {
   id: string;
