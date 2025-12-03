@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const BOT_API_BASE = 'http://localhost:3000/api/bot-appearance';
+const BOT_API_BASE = 'http://wally.hidencloud.com:24716/api/bot-appearance';
 
 export async function GET(req: NextRequest) {
     const guildId = req.nextUrl.searchParams.get('guildId');

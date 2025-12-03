@@ -6,7 +6,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
 
   try {
-    const backendRes = await fetch("http:/localhost:3000/api/mutual-servers", {
+    const backendRes = await fetch("http://wally.hidencloud.com:24716/api/mutual-servers", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
