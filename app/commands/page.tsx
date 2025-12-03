@@ -1,11 +1,11 @@
 import { FiSearch, FiUsers, FiStar, FiZap, FiLock } from "react-icons/fi";
 import { IoGameController, IoSparkles } from "react-icons/io5";
-import { useState } from "react";
-import JSX from "react"
+"use client";
+import { useState, type ReactElement } from "react";
 type Category = {
   id: string;
   name: string;
-  icon: JSX.ReactElement;
+  icon: ReactElement;
 };
 
 type Command = {

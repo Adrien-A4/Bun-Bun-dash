@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import fetch from "node-fetch";
 import cookie from "cookie";
 
 export async function GET(req: Request) {
@@ -72,7 +71,7 @@ export async function GET(req: Request) {
       }),
     });
 
-    const response = NextResponse.redirect("http:/localhost:3001/servers");
+    const response = NextResponse.redirect("https://bunbun.vercel.app/servers");
     response.headers.set(
       "Set-Cookie",
       cookie.serialize("discord_token", tokenData.access_token, {
