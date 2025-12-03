@@ -71,7 +71,7 @@ export async function GET(req: Request) {
       }),
     });
 
-    const response = NextResponse.redirect("https://bunbun.vercel.app/servers");
+    const response = NextResponse.redirect("https://bunbun-blush.vercel.app/servers");
     response.headers.set(
       "Set-Cookie",
       cookie.serialize("discord_token", tokenData.access_token, {
